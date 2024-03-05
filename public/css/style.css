@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: rgb(181 178 178 / 0.1);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  user-select: none; 
+  overscroll-behavior: contain;
+}
+
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+.container {
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+
+  & button {
+    background: #000000;
+    color: #ffffff;
+
+    border: none;
+    outline: none;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+ 
+
+.file-list {
+  flex: 1;
+  border-radius: 16px;
+
+  overflow-y: auto;
+
+  padding: 10px;
+}
+
+.file-list-content{
+
+  margin: auto;
+
+  width: min(100%, 750px);
+
+  display: grid;
+  gap: 5px;
+
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.item-list {
+  display: grid;
+  background: #ffffff;
+  height: 50px;
+
+  border-radius: 8px;
+}
+
+.item-flex{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  
+}
+
+.div_2a3p2fG{
+  display: flex;
+  align-items: center;
+
+  height: 50px;
+  padding: 5px;
+  gap: 5px;
+
+}
+
+.button_l1wVjFZ{
+  background: #000000;
+  color: #ffffff;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+
+.div_1TrPFDe{
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  flex: 1;
+
+  font-size: 15px;
+
+  & h4 {
+    width: 60px;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 15px;
+  }
+}
+
+.div_8ke8e9l{
+  display: grid;
+  align-items: center;
+
+  flex: 1;
+
+  height: 50px;
+  
+
+  & input {
+    background: none;
+    border: none;
+    outline: none;
+
+    padding: 0 15px;
+  }
+}
+
+.span_ZSfem7Z{
+  margin: auto;
+}
+
+/* file-footer */
