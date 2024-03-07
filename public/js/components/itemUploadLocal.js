@@ -5,8 +5,8 @@ export default ( link )=>{
         <div class="div_I6l34b8">
             <div class="div_yG6SdWo">
                 <div class="div_1TrPFDe">
-                    <h4 id="textPercentage" style="color:orange">100%</h4>
-                    <span>1709656400978.mp4</span>
+                    <p class="text-ellipsis">${ link }</p>
+                    <span id="textPercentage" style="color:orange">0%</span>
                 </div>
                 <div class="div_2a3p2fG">
                     <button id="btnCancel" class="button_l1wVjFZ"><i class="fi fi-rr-cross-small"></i></button>
@@ -25,7 +25,7 @@ export default ( link )=>{
         xhr.addEventListener('progress', e => {
             if (e.lengthComputable) {
                 const percentage = (e.loaded / e.total) * 100;
-                textPercentage.textContent = `${ percentage.toFixed(2) }%`
+                textPercentage.textContent = `${ percentage.toFixed(2) }% ~ subida local`
             }
         });
 
@@ -36,8 +36,7 @@ export default ( link )=>{
                 const formData = new FormData();
                 formData.append('file', blob, `${ Date.now() }.${ blob.type.split('/')[1] }`);
 
-                console.log('termino');
-                $element.replaceWith( itemUploadServer( formData ) )
+                $element.replaceWith( itemUploadServer( formData, link ) )
 
             } else {
                 console.error('Error al descargar el video:', xhr.status);

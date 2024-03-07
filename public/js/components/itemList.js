@@ -49,12 +49,12 @@ export default ( data = {} )=>{
             $element.replaceWith( itemUploadLocal( inputLink.value.trim() ) )
         }
         else if( data.from == 'setLink' ) {
-            $element.replaceWith( itemWaitingServer( inputLink.value.trim() ) )
+            $element.replaceWith( itemWaitingServer( inputLink.value.trim(), Date.now() ) )
         }
         else if( data.from == 'loadFile' ) {
             const formData = new FormData()
             formData.append('file', inputFile.files[0]);
-            $element.replaceWith( itemUploadServer( formData ) )
+            $element.replaceWith( itemUploadServer( formData, inputFile.files[0].name ) )
         }
     })
 

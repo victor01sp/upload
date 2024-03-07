@@ -95,23 +95,25 @@
   align-items: center;
 
   height: 60px;
-  padding: 5px;
+  padding: 10px;
   gap: 5px;
 }
 
 .div_1TrPFDe{
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: grid; 
 
   flex: 1;
 
   font-size: 15px;
+  padding: 0 15px;
 
-  & h4 {
-    width: 60px;
+  & p {
+    font-size: 15px;
+  }
+
+  & span {
     font-size: 13px;
-    text-align: center;
-    margin: 0 15px;
+    font-weight: bold;
   }
 }
 
@@ -134,4 +136,4 @@
 }
 
 
-/* /* div_gPfQM3F * /
+/* /* div_2a3p2fG * /
